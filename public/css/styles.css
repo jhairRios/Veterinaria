@@ -1,0 +1,8 @@
+
+.carousel-item img {
+    height: 500px; /* Altura deseada para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    filter: blur(5px); /* Aplica un efecto de desenfoque (ajusta el valor según lo necesario) */
+  }
+  
