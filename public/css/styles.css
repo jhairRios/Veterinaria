@@ -6,191 +6,88 @@ body {
   padding: 0;
 }
 
+h2 {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #0d6efd;
+}
+
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-/* Barra de navegación */
-.navbar {
-  background-color: #0d6efd; /* Color de fondo de la barra de navegación */
+.nav-link {
+  color: white !important;
 }
 
-.navbar-nav .nav-link {
-  color: white !important; /* Color del texto en los enlaces */
-}
-
-/* Contenedor de la barra de búsqueda y botones */
-.d-flex {
-  display: flex;
-  align-items: center; /* Alinea verticalmente los elementos */
-  gap: 10px; /* Espacio entre los elementos */
-}
-
-/* Barra de búsqueda */
-.search-input {
-  width: 300px; /* Ancho fijo para la barra de búsqueda */
-  height: 40px; /* Altura ajustada */
-  padding: 8px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño del texto */
-  border: 1px solid #ddd; /* Borde gris claro */
-  border-radius: 8px; /* Bordes redondeados */
-}
-
-.search-input:focus {
-  border-color: #28a745; /* Color verde al enfocar */
-  box-shadow: 0 0 4px rgba(40, 167, 69, 0.5); /* Sombra verde suave */
-}
-
-/* Botón de búsqueda */
-.custom-search-btn {
-  background-color: #28a745; /* Color de fondo verde */
-  border: none; /* Sin borde */
-  color: white; /* Color del texto blanco */
-  font-weight: bold; /* Texto en negrita */
-  font-size: 14px; /* Tamaño del texto */
-  padding: 10px 16px; /* Espacio interno del botón */
-  border-radius: 8px; /* Bordes redondeados */
-  height: 40px; /* Altura ajustada del botón */
-  white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-  transition: background-color 0.3s ease; /* Animación de cambio de color */
-}
-
-.custom-search-btn:hover {
-  background-color: #218838; /* Color de fondo al pasar el mouse */
-}
-
-/* Botón de login/registro */
-.dropdown-circle button {
-  width: 40px; /* Ancho del botón */
-  height: 40px; /* Alto del botón */
-  padding: 0; /* Sin espacio interno */
-  font-size: 20px; /* Tamaño del ícono */
-  display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  border-radius: 50%; /* Forma circular */
-  transition: all 0.3s ease;
-  border: 2px solid white; /* Borde blanco para contraste */
-  background-color: #0d6efd; /* Color de fondo azul */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-.dropdown-circle button:hover {
-  background-color: #0056b3; /* Color de fondo al pasar el mouse */
-  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-}
-
-/* Menú desplegable */
-.dropdown-menu {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semi-transparente */
-  border: none;
-  border-radius: 12px; /* Bordes más redondeados */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-  z-index: 1050;
-  padding: 20px;
-  width: 90%;
-  max-width: 800px; /* Ancho máximo aumentado */
-  text-align: center;
-  color: #333;
-}
-
-.dropdown-circle.show .dropdown-menu {
-  display: block;
-}
-
-/* Contenedor de los formularios */
-.forms-container {
-  display: flex; /* Coloca los formularios uno al lado del otro */
-  gap: 20px; /* Espacio entre los formularios */
-}
-
-/* Formularios dentro del menú desplegable */
-.login-form,
-.signup-form {
-  flex: 1; /* Cada formulario ocupa el mismo espacio */
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px; /* Bordes más redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-.login-form {
-  background-color: #f0f8ff; /* Fondo azul claro para el login */
-}
-
-.signup-form {
-  background-color: #f0fff0; /* Fondo verde claro para el registro */
-}
-
-.login-form h5,
-.signup-form h5 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #0d6efd; /* Color azul para los títulos */
-}
-
-.login-form input,
-.signup-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: border-color 0.3s ease;
-}
-
-.login-form input:focus,
-.signup-form input:focus {
-  border-color: #0d6efd; /* Borde azul al enfocar */
-  outline: none;
-  box-shadow: 0 0 8px rgba(13, 110, 253, 0.2); /* Sombra azul al enfocar */
-}
-
-.login-form button,
-.signup-form button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #0d6efd; /* Color de fondo azul */
-  transition: background-color 0.3s ease;
-}
-
-.login-form button:hover,
-.signup-form button:hover {
-  background-color: #0056b3; /* Color de fondo al pasar el mouse */
-}
-
-/* Imágenes del carrusel */
-.carousel-item img {
-  height: 400px; /* Altura predefinida */
+/* Carrusel */
+.carousel-inner img {
+  height: 400px;
   object-fit: cover;
-  width: 100%;
-  filter: blur(3px); /* Efecto de desenfoque */
 }
 
-/* Estilos para la sección de servicios */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Sección de servicios */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-  height: 200px; /* Altura fija para las imágenes de los servicios */
-  object-fit: cover; /* Asegura que la imagen cubra el espacio */
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Botones */
+.btn {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+  }
 }
